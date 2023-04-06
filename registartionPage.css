@@ -1,0 +1,130 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes mover {
+    0%{transform: translateY(0);}
+    100%{transform: translateY(-20px);}
+}
+
+@keyframes Meiomi {
+    from {
+        transform: translateX(-300px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+body {
+    background: linear-gradient(101.5deg, rgb(249, 100, 100) 48.8%, rgb(146, 166, 250) 98.7%);
+    margin-top: 100px !important;
+    display: flex;
+    justify-content: center;
+    font-family: 'Courgette', cursive;
+    font-size: larger;
+}
+
+header, main{
+    padding: 20px;
+    display: inline-block;
+   
+}
+
+header {
+    line-height: 30px;
+    width: 40ch;
+}
+
+.about-btn {
+    border: none;
+    background: white;
+    border-radius: 30px;
+    width: 4cm;
+    height: 1cm;
+    color: black;
+    margin-top: 15px;
+    font-family: 'Courgette', cursive;
+    font-size: larger;
+
+    transition:transform 0.3s;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+.about-btn:hover {
+    background-color: rgb(223, 223, 223);
+    transform: translateX(-10px);
+}
+
+.header-border {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+    
+}
+
+main {
+    line-height: 70px;
+    border: white solid;
+    background-color: white;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    text-align: center;
+    
+}
+
+.input {
+    display: grid;
+}
+
+input {
+    margin-top:20px;
+    border: black solid;
+    border-radius: 20px;
+    background-color: black;
+    padding: 10px;
+    width: 9cm;
+    font-family: 'Courgette', cursive;
+    color: white;
+}
+
+.reg-btn {
+    border: none;
+    background: linear-gradient(101.5deg, rgb(249, 100, 100) 48.8%, rgb(146, 166, 250) 98.7%);
+    border-radius: 30px;
+    width: 4cm;
+    height: 1cm;
+    color: white;
+    font-family: 'Courgette', cursive;
+    font-size: larger;
+
+    transition: all 0.4s;
+
+}
+
+.reg-btn:hover {
+    background: linear-gradient(101.5deg, rgb(249, 100, 100) 48.8%, rgb(146, 166, 250) 98%);
+    transform:scaleX(40px);
+    width: 6cm;
+}
+
+img {
+    margin-top: 50px;
+    margin-bottom: 14px;
+    width: 3cm;
+    animation: mover 1s infinite alternate;
+}
+
+.name {
+    animation: Meiomi 1s;
+}
